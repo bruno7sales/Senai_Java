@@ -1,18 +1,26 @@
 package com.atividade06.models;
 
-public class Onibus extends Veiculo {
-    private int capacidadePassageiros;
+final public class Onibus extends Veiculo {
+    // atributo
+    private boolean leito;
 
-    public Onibus(String marca, String modelo, int ano, int capacidadePassageiros) {
-        super(marca, modelo, ano, null);
-        this.capacidadePassageiros = capacidadePassageiros;
+    // construtor
+    public Onibus(String fabricante, String modelo, String cor, String ano, String placa, String categoria, boolean leito) {
+        super(fabricante, modelo, cor, ano, placa, categoria);
+        this.leito = leito;
     }
 
-    public int getCapacidadePassageiros() {
-        return capacidadePassageiros;
+    // getters e setters
+    public boolean isLeito() {
+        return this.leito;
     }
 
-    public void setCapacidadePassageiros(int capacidadePassageiros) {
-        this.capacidadePassageiros = capacidadePassageiros;
+    public boolean getLeito() {
+        return this.leito;
     }
+
+    public void setLeito(boolean leito) {
+        this.leito = leito;
+    }
+
 }

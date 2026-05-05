@@ -1,19 +1,22 @@
 package com.atividade06.models;
 
-public class Moto extends Veiculo {
-    private boolean temSidecar;
+final public class Moto extends Veiculo {
+    // atributo
+    private String cilindradas;
 
-    public Moto(String marca, String modelo, int ano, boolean temSidecar) {
-        super(marca, modelo, ano, null);
-        this.temSidecar = temSidecar;
+    // construtor
+    public Moto(String fabricante, String modelo, String cor, String ano, String placa, String categoria, String cilindradas) {
+        super(fabricante, modelo, cor, ano, placa, categoria);
+        this.cilindradas = cilindradas;
     }
 
-    public boolean isTemSidecar() {
-        return temSidecar;
+    // getters e setters
+    public String getCilindradas() {
+        return this.cilindradas;
     }
 
-    public void setTemSidecar(boolean temSidecar) {
-        this.temSidecar = temSidecar;
+    public void setCilindradas(String cilindradas) {
+        this.cilindradas = cilindradas;
     }
-    
+
 }

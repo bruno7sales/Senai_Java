@@ -1,56 +1,71 @@
 package com.atividade06.models;
 
 abstract public class Veiculo {
-    // Atributos comuns a todos os veículos
-    private String marca;
+    // atributos
+    private String fabricante;
     private String modelo;
-    private int ano;
-    private String tipo; // Carro, Moto, Caminhão, Ônibus
+    private String cor;
+    private String ano;
     private String placa;
-    // Construtor
-    public Veiculo(String marca, String modelo, int ano, String placa2) {
-        this.marca = marca;
+    private String categoria;
+
+    // construtor
+    public Veiculo(String fabricante, String modelo, String cor, String ano, String placa, String categoria) {
+        this.fabricante = fabricante;
         this.modelo = modelo;
+        this.cor = cor;
         this.ano = ano;
-    }
-    // Getters e Setters
-    public String getMarca() {
-        return marca;
+        this.placa = placa;
+        this.categoria = categoria;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    // getters e setters
+    public String getFabricante() {
+        return this.fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public int getAno() {
-        return ano;
+    public String getCor() {
+        return this.cor;
     }
 
-    public void setAno(int ano) {
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getAno() {
+        return this.ano;
+    }
+
+    public void setAno(String ano) {
         this.ano = ano;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public String getPlaca() {
-        return placa;
+        return this.placa;
     }
 
     public void setPlaca(String placa) {
         this.placa = placa;
     }
+
+    public String getCategoria() {
+        return this.categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+    
 }

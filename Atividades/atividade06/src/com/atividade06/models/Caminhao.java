@@ -1,20 +1,19 @@
 package com.atividade06.models;
 
-public class Caminhao extends Veiculo {
-    private double capacidadeCarga;
+final public class Caminhao extends Veiculo {
+    private int carroceria;
 
-    public Caminhao(String marca, String modelo, int ano, double capacidadeCarga) {
-        super(marca, modelo, ano, null);
-        this.capacidadeCarga = capacidadeCarga;
+    public Caminhao(String fabricante, String modelo, String cor, String ano, String placa, String categoria, int carroceria) {
+        super(fabricante, modelo, cor, ano, placa, categoria);
+        this.carroceria = carroceria;
     }
 
-    public double getCapacidadeCarga() {
-        return capacidadeCarga;
+    public int getCarroceria() {
+        return this.carroceria;
     }
 
-    public void setCapacidadeCarga(double capacidadeCarga) {
-        this.capacidadeCarga = capacidadeCarga;
+    public void setCarroceria(int carroceria) {
+        this.carroceria = carroceria;
     }
-    
-    
+
 }

@@ -1,20 +1,26 @@
 package com.atividade06.models;
 
-public class Carro extends Veiculo {
+final public class Carro extends Veiculo {
+    // atributos
+    private boolean bagageiro;
 
-    private int numeroPortas;
-
-    public Carro(String marca, String modelo, int ano, int numeroPortas) {
-        super(marca, modelo, ano, null);
-        this.numeroPortas = numeroPortas;
+    // construtor
+    public Carro(String fabricante, String modelo, String cor, String ano, String placa, String categoria, boolean bagageiro) {
+        super(fabricante, modelo, cor, ano, placa, categoria);
+        this.bagageiro = bagageiro;
     }
 
-    public int getNumeroPortas() {
-        return numeroPortas;
+    // getters e setters
+    public boolean isBagageiro() {
+        return this.bagageiro;
     }
 
-    public void setNumeroPortas(int numeroPortas) {
-        this.numeroPortas = numeroPortas;
+    public boolean getBagageiro() {
+        return this.bagageiro;
+    }
+
+    public void setBagageiro(boolean bagageiro) {
+        this.bagageiro = bagageiro;
     }
 
 }
