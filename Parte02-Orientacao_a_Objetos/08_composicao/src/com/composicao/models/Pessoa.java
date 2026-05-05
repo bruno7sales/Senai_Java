@@ -1,13 +1,14 @@
 package com.composicao.models;
 
 public class Pessoa {
+    // atributos
     private String nome;
     private String cpf;
     private String telefone;
     private String email;
     private String cnh;
 
-    public Pessoa(String nome, String cpf, String email, String cnh, String telefone) {
+    public Pessoa(String nome, String cpf, String telefone, String email, String cnh) {
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -16,51 +17,43 @@ public class Pessoa {
     }
 
     public String getNome() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNome'");
+        return this.nome;
     }
 
-    public void setNome(String nome2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setNome'");
-    }
-
-    public void setCpf(String cpf2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setCpf'");
-    }
-
-    public void setTelefone(String telefone2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setTelefone'");
-    }
-
-    public void setEmail(String email2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCpf() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCpf'");
+        return this.cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getTelefone() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTelefone'");
+        return this.telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getEmail() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
+        return this.email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getCnh() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCnh'");
+        return this.cnh;
     }
 
+    public void setCnh(String cnh) {
+        this.cnh = cnh;
+    }
 
-
-    
 }
